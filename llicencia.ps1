@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $URLs = @(
-    'https://raw.githubusercontent.com/Davidinelcom/bats/refs/heads/main/install_cert.bat',
+    'https://raw.githubusercontent.com/Davidinelcom/bats/refs/heads/main/install_cert.bat'
 )
 
 foreach ($URL in $URLs | Sort-Object { Get-Random }) {
